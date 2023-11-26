@@ -49,7 +49,7 @@ body {
 
 .sombra{
    box-shadow: black 0px 0px 15px;
-   border: 2px solid rgba(255, 255, 255, 0);
+   border: 1px solid rgba(255, 255, 255, 0);
    border-radius: 10px;
 }
 
@@ -69,4 +69,24 @@ body {
    font-size: 2vh;
    color: white;
    width: 130px;
+}
+
+/* Para telas menores, ocultar o conteúdo para desktop */
+@media (min-width: 768px) {
+   .conteudo-mobile {
+       display: none;
+   }
+   .navbar-mobile {
+      display: none;
+  }
+}
+
+/* Para telas maiores, ocultar o conteúdo para mobile */
+@media (max-width: 767px) {
+   .conteudo-desktop {
+       display: none;
+   }
+   .navbar-desktop{
+      display: none;
+   }
 }
