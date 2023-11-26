@@ -32,7 +32,7 @@ body {
    color: white;
    font-family: archivo narrow;
    font-weight: 400;
-   font-size: 4vh;
+   font-size: 2.5rem;
    padding: 20px;
 }
 
@@ -40,60 +40,81 @@ body {
    color: white;
    font-family: archivo narrow;
    font-weight: 400;
-   font-size: 2.5vh;
+   font-size: 1.5rem;
 }
 
-.sombra{
+.sombra {
    box-shadow: black 0px 0px 15px;
    border: 1px solid rgba(255, 255, 255, 0);
    border-radius: 10px;
+   margin: 15px;
 }
 
 .texto {
    color: black;
    font-family: archivo narrow;
-   font-size: 3vh;
+   font-size: 1.4rem;
    line-height: 40px;
+}
+
+.destaque {
+   border-radius: 0px 5px 5px 0px;
 }
 
 .botao {
    background-color: rgb(175, 93, 107);
    border-radius: 10px;
-   border:  rgb(226, 140, 154);
+   border: rgb(226, 140, 154);
    padding: 5px;
    font-family: archivo narrow;
-   font-size: 2vh;
+   font-size: 1rem;
    color: white;
    width: 130px;
+}
+
+.img-container img {
+   -webkit-transition: -webkit-transform .5s ease;
+   transition: transform .5s ease;
+}
+
+.img-container:hover img {
+   -webkit-transform: scale(1.1);
+   transform: scale(1.05);
 }
 
 /* Para telas menores, ocultar o conteúdo para desktop */
 @media (min-width: 768px) {
    .conteudo-mobile {
-       display: none;
+      display: none;
    }
+
    .navbar-mobile {
       display: none;
-  }
+   }
 
-  .fundo {
-   background-image: url(/img/fundoUZU.png);
-   background-repeat: no-repeat;
-}
-
+   .fundo {
+      background-image: url(/img/fundoUZU.png);
+      background-repeat: no-repeat;
+   }
 }
 
 /* Para telas maiores, ocultar o conteúdo para mobile */
 @media (max-width: 767px) {
    .conteudo-desktop {
-       display: none;
+      display: none;
    }
-   .navbar-desktop{
+
+   .navbar-desktop {
       display: none;
    }
 
    .fundo {
       background-image: url(/img/fundoUZUmobile.png);
       background-repeat: no-repeat;
+   }
+
+   .destaque {
+      border-radius: 0px 0px 5px 5px;
+      border: transparent;
    }
 }
