@@ -11,11 +11,7 @@ body {
    max-width: 2160px;
 }
 
-.fundo {
 
-   background-image: url(/img/fundoUZU.png);
-   background-repeat: no-repeat;
-}
 
 #nav {
    position: absolute;
@@ -79,6 +75,12 @@ body {
    .navbar-mobile {
       display: none;
   }
+
+  .fundo {
+   background-image: url(/img/fundoUZU.png);
+   background-repeat: no-repeat;
+}
+
 }
 
 /* Para telas maiores, ocultar o conteúdo para mobile */
@@ -88,5 +90,10 @@ body {
    }
    .navbar-desktop{
       display: none;
+   }
+
+   .fundo {
+      background-image: url(/img/fundoUZUmobile.png);
+      background-repeat: no-repeat;
    }
 }
