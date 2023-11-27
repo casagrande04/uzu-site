@@ -96,6 +96,7 @@ body {
       background-image: url(../img/fundoUZU.png);
       background-repeat: no-repeat;
       width: 100%;
+      overflow-x: hidden;
    }
 }
 
