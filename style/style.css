@@ -96,7 +96,6 @@ body {
       background-image: url(../img/fundoUZU.png);
       background-repeat: no-repeat;
       width: 100%;
-      overflow-x: hidden;
    }
 }
 
@@ -113,6 +112,8 @@ body {
    .fundo {
       background-image: url(../img/fundoUZUmobile.png);
       background-repeat: no-repeat;
+      width: 100%;
+      height: auto;
    }
 
    .destaque {
