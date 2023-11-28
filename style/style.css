@@ -28,12 +28,29 @@ body {
    display: inline-block;
 }
 
+.barra {
+   background-color: black;
+}
+
+.barra2 {
+   color: white !important;
+   font-family: archivo narrow;
+   font-weight: 400;
+   font-size: 1.5rem !important;
+}
+
 .titulo {
    color: white;
    font-family: archivo narrow;
    font-weight: 400;
    font-size: 2.2rem;
    padding: 20px;
+   background-color: rgb(24, 24, 24);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
 }
 
 .descricao {
@@ -41,6 +58,19 @@ body {
    font-family: archivo narrow;
    font-weight: 400;
    font-size: 1.5rem;
+}
+
+.lista {
+   color: white !important;
+   font-family: archivo narrow;
+   font-weight: 400;
+   font-size: 1.2rem;
+   border-bottom: 1px solid white;
+   width: 40%;
+}
+
+.lista:hover {
+   color: black !important;
 }
 
 .sombra {
@@ -51,7 +81,8 @@ body {
 }
 
 .texto {
-   color: black;
+   color: white !important;
+   width: 100%;
    font-family: archivo narrow;
    font-size: 1.4rem;
    line-height: 40px;
@@ -59,6 +90,12 @@ body {
 
 .destaque {
    border-radius: 0px 5px 5px 0px;
+   background-color: rgb(44, 44, 44);
+}
+
+.destaque2 {
+   border: 1px solid rgb(44, 44, 44);
+   border-radius: 5px;
 }
 
 .botao {
@@ -72,6 +109,15 @@ body {
    width: 130px;
 }
 
+.rodape {
+   background-color: rgb(24, 24, 24);
+   height: auto;
+   color: white;
+   font-family: archivo narrow;
+   padding: 40px;
+   width: 100%;
+}
+
 .img-container img {
    -webkit-transition: -webkit-transform .5s ease;
    transition: transform .5s ease;
@@ -80,6 +126,10 @@ body {
 .img-container:hover img {
    -webkit-transform: scale(1.1);
    transform: scale(1.05);
+}
+
+.light-mode {
+   filter: invert(100%);
 }
 
 
@@ -95,8 +145,8 @@ body {
    }
 
    .fundo {
-      background: rgb(24,24,24);
-      background: linear-gradient(156deg, rgba(24,24,24,1) 0%, rgba(24,24,24,1) 19%, rgba(40,31,28,1) 49%, rgba(44,32,29,1) 58%, rgba(100,55,44,1) 90%, rgba(154,69,48,1) 100%);
+      background: rgb(24, 24, 24);
+      background: linear-gradient(156deg, rgba(24, 24, 24, 1) 0%, rgba(24, 24, 24, 1) 19%, rgba(40, 31, 28, 1) 49%, rgba(44, 32, 29, 1) 58%, rgba(100, 55, 44, 1) 90%, rgba(154, 69, 48, 1) 100%);
    }
 }
 
@@ -111,8 +161,8 @@ body {
    }
 
    .fundo {
-      background: rgb(24,24,24);
-      background: linear-gradient(156deg, rgba(24,24,24,1) 0%, rgba(24,24,24,1) 19%, rgba(40,31,28,1) 49%, rgba(44,32,29,1) 58%, rgba(100,55,44,1) 90%, rgba(154,69,48,1) 100%);
+      background: rgb(24, 24, 24);
+      background: linear-gradient(156deg, rgba(24, 24, 24, 1) 0%, rgba(24, 24, 24, 1) 19%, rgba(40, 31, 28, 1) 49%, rgba(44, 32, 29, 1) 58%, rgba(100, 55, 44, 1) 90%, rgba(154, 69, 48, 1) 100%);
    }
 
    .destaque {
