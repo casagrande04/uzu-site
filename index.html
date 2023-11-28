@@ -63,9 +63,12 @@
 
     <!-- NAVBAR MOBILE -->
     <div class="conteudo-mobile">
-        <nav class="navbar navbar-expand-lg" style="background-color: black;">
+        <nav class="navbar navbar-expand-lg barra">
+            <button onclick="trocarCSS()" style="background-color: transparent;border: none;"><img
+                    src="img/darkmode.png" alt="Imagem"
+                    style="position: absolute; left: 0; top: 0;"></button>
             <div class="container-fluid"
-                style="display: flex; flex-direction: row; justify-content: flex-end; align-items: flex-end; color: white;">
+                style="display: flex; flex-direction: row; justify-content: flex-end; align-items: flex-end;">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -75,16 +78,14 @@
                     style="justify-content: flex-end;">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"
-                                style="color: white; font-family: archivo narrow; font-size: 1.5rem;">Home</a>
+                            <a class="nav-link active barra2" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                                style="color: white;font-family: archivo narrow;font-size: 1.5rem;">
+                            <a class="nav-link dropdown-toggle barra2" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Marcas
                             </a>
-                            <ul class="dropdown-menu" style="background-color: black;">
+                            <ul class="dropdown-menu barra">
                                 <li><a class="dropdown-item lista" href="#">Nike</a></li>
                                 <li><a class="dropdown-item lista" href="#">Adidas</a></li>
                                 <li><a class="dropdown-item lista" href="#">Jordan</a></li>
@@ -92,12 +93,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"
-                                style="color: white;font-family: archivo narrow;font-size: 1.5rem;">Comprar</a>
+                            <a class="nav-link barra2" href="#">Comprar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"
-                                style="color: white;font-family: archivo narrow;font-size: 1.5rem;">Sobre</a>
+                            <a class="nav-link barra2" href="#">Sobre</a>
                         </li>
                     </ul>
                 </div>
@@ -185,8 +184,8 @@
             </div>
         </div> <!-- FIM DO RODAPÉ DESKTOP-->
         <!-- RODAPÉ MOBILE -->
-        <div class="conteudo-mobile"
-            style="height: auto;color: white; font-family: archivo narrow; padding: 40px; width: 100%; background-color: black;">
+        <div class="conteudo-mobile rodape"
+            >
             <p style="display: flex; justify-content: center; align-items: center;"><img src="img/insta.png" alt="">
                 <a href="https://www.instagram.com/uzucompany/?img_index=2"
                     style="color: white; text-decoration: none;">@uzucompany</a>
