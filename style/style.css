@@ -93,9 +93,8 @@ body {
    }
 
    .fundo {
-      background-image: url(../img/fundoUZU.png);
-      background-repeat: no-repeat;
-      width: 100%;
+      background: rgb(24,24,24);
+      background: linear-gradient(156deg, rgba(24,24,24,1) 0%, rgba(24,24,24,1) 19%, rgba(40,31,28,1) 49%, rgba(44,32,29,1) 58%, rgba(100,55,44,1) 90%, rgba(154,69,48,1) 100%);
    }
 }
 
@@ -110,10 +109,8 @@ body {
    }
 
    .fundo {
-      background-image: url(../img/fundoUZUmobile.png);
-      background-repeat: no-repeat;
-      width: 100%;
-      height: auto;
+      background: rgb(24,24,24);
+      background: linear-gradient(156deg, rgba(24,24,24,1) 0%, rgba(24,24,24,1) 19%, rgba(40,31,28,1) 49%, rgba(44,32,29,1) 58%, rgba(100,55,44,1) 90%, rgba(154,69,48,1) 100%);
    }
 
    .destaque {
