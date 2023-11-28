@@ -82,6 +82,8 @@ body {
    transform: scale(1.05);
 }
 
+
+
 /* Para telas menores, ocultar o conteúdo para desktop */
 @media (min-width: 768px) {
    .conteudo-mobile {
