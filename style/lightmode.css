@@ -9,6 +9,7 @@
 body {
     overflow-x: hidden;
     max-width: 2160px;
+    transition: background-color 0.5s ease;
 }
 
 
@@ -70,7 +71,7 @@ body {
 }
 
 .lista:hover {
-    color: white !important;
+    color:rgb(24, 24, 24)!important;
 }
 
 .sombra {
@@ -152,6 +153,10 @@ body {
 
 /* Para telas maiores, ocultar o conteúdo para mobile */
 @media (max-width: 767px) {
+
+    .barra{
+        height: 330px;
+     }
     .conteudo-desktop {
         display: none;
     }

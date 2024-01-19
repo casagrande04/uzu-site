@@ -18,7 +18,7 @@
 <body style="background-color: rgb(44, 44, 44);">
     <div class="conteudo-desktop">
         <nav class="navbar navbar-expand-lg barra">
-            <button onclick="trocarCSS()" style="background-color: transparent;border: none;"><img
+            <button onclick="trocarCSS()" style="background-color: transparent;border: none;"><img id="mode"
                     src="img/darkmode.png" alt="Imagem"></button>
 
             <div class="container-fluid"
@@ -64,9 +64,8 @@
     <!-- NAVBAR MOBILE -->
     <div class="conteudo-mobile">
         <nav class="navbar navbar-expand-lg barra">
-            <button onclick="trocarCSS()" style="background-color: transparent;border: none;"><img
-                    src="img/darkmode.png" alt="Imagem"
-                    style="position: absolute; left: 0; top: 0;"></button>
+            <button onclick="trocarCSS()" style="background-color: transparent;border: none;"><img id="mode"
+                src="img/darkmode.png" alt="Imagem" style="position: absolute; left: 0; top: 0;"></button>
             <div class="container-fluid"
                 style="display: flex; flex-direction: row; justify-content: flex-end; align-items: flex-end;">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -115,13 +114,13 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col descricao img-container">
-                    <img class="sombra" src="img/cdg.png" alt=""> <br> Converse CDG
+                    <img class="sombra" id="cdg" src="img/cdg.png" alt=""> <br> Converse CDG
                 </div>
                 <div class="col descricao img-container">
-                    <img class="sombra" src="img/krueger.png" alt=""> <br> Nike Dunk Freddy Krueger
+                    <img class="sombra" id="krueger" src="img/krueger.png" alt=""> <br> Nike Dunk Freddy Krueger
                 </div>
                 <div class="col descricao img-container">
-                    <img class="sombra" src="img/jordan4PG.png" alt=""> <br> Air jordan 4 SB "Pine Green"
+                    <img class="sombra" id="jordan4" src="img/jordan4PG.png" alt=""> <br> Air jordan 4 SB "Pine Green"
                 </div>
             </div> <br> <br>
             <div class="card mb-3" style="border: none; width: 100%;">
@@ -184,8 +183,7 @@
             </div>
         </div> <!-- FIM DO RODAPÉ DESKTOP-->
         <!-- RODAPÉ MOBILE -->
-        <div class="conteudo-mobile rodape"
-            >
+        <div class="conteudo-mobile rodape">
             <p style="display: flex; justify-content: center; align-items: center;"><img src="img/insta.png" alt="">
                 <a href="https://www.instagram.com/uzucompany/?img_index=2"
                     style="color: white; text-decoration: none;">@uzucompany</a>
@@ -208,21 +206,9 @@
 
     <!-- <script>function toggleLightMode() { if (document.body.classList.contains('light-mode')) { document.body.classList.remove('light-mode'); } else { document.body.classList.add('light-mode'); } }</script> -->
 
-    <script>
-        var estiloAtual = 1;
+    <script src="index.js">
 
-        function trocarCSS() {
-            var estilo = document.getElementById('estilo');
 
-            // Troca entre os estilos ao clicar no botão
-            if (estiloAtual === 1) {
-                estilo.href = '../style/style.css';
-                estiloAtual = 2;
-            } else {
-                estilo.href = '../style/lightmode.css';
-                estiloAtual = 1;
-            }
-        }
     </script>
 
 </body>

@@ -9,6 +9,7 @@
 body {
    overflow-x: hidden;
    max-width: 2160px;
+   transition: background-color 0.5s ease;
 }
 
 
@@ -136,6 +137,7 @@ body {
 
 /* Para telas menores, ocultar o conteúdo para desktop */
 @media (min-width: 768px) {
+
    .conteudo-mobile {
       display: none;
    }
@@ -152,6 +154,8 @@ body {
 
 /* Para telas maiores, ocultar o conteúdo para mobile */
 @media (max-width: 767px) {
+
+
    .conteudo-desktop {
       display: none;
    }
